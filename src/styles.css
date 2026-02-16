@@ -1,0 +1,141 @@
+:root {
+    --bg: #f7f7fb;
+    --card: #fff;
+    --muted: #666;
+    --accent: #2b6cb0;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Roboto, system-ui, Arial;
+    background: var(--bg);
+    color: #111;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 16px;
+}
+
+.app header {
+    background: var(--card);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    padding: 12px 16px
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto
+}
+
+nav a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600
+}
+
+.card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    margin-bottom: 16px
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.table th,.table td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    text-align: left
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    align-items: center
+}
+
+.btn {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid #ddd
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px
+}
+
+.form-row input,.form-row select,textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1
+}
+
+.small {
+    font-size: 0.9rem;
+    color: var(--muted)
+}
+
+.badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px
+}
+
+.kpi {
+    padding: 16px;
+    background: linear-gradient(90deg, #fff, #f8fafc);
+    border-radius: 8px
+}
+
+.quick-status {
+    display: flex;
+    gap: 6px;
+    align-items: center
+}
+
+.actions {
+    display: flex;
+    gap: 6px
+}
+
+.link {
+    color: var(--accent);
+    text-decoration: underline;
+    cursor: pointer
+}
